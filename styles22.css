@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a1433;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #551a8b;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#logo img {
+    max-height: 25px; 
+    margin-right: 10px; 
+}
+#logo span {
+    font-weight: bold;
+}
+
+.header-search {
+    margin-right: 20px;
+}
+
+#search input {
+    margin-right: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#announcement {
+    background-image: url('kotjata.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 20px;
+    height: 600px; 
+    color: #551a8b;
+}
+
+.kittens {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.kitten {
+    text-align: center;
+}
+
+.kitten img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #551a8b;
+    padding: 10px;
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-content {
+    color: #ffffff;
+}
+
+#buyForm {
+    background-color: #b5903a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 40%; 
+    margin: 0 auto; 
+}
+
+#buyForm h2 {
+    color: #551a8b;
+}
+
+#buyForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #551a8b;
+}
+
+#buyForm input[type="text"],
+#buyForm input[type="email"],
+#buyForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #551a8b;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#buyForm button[type="submit"] {
+    background-color: #551a8b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buyForm button[type="submit"]:hover {
+    background-color: #3b0d5b;
+}
+
+.kitten img:hover {
+    transform: scale(1.8); 
+    transition: transform 0.3s ease; 
+}
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3af66;;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+}
+
+.alert p {
+    margin: 0;
+    color: #551a8b;
+}
+
+.alert-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #551a8b;
+}
+
+#logo span:hover {
+    color: #ff0000; 
+    transition: color 0.3s ease;
+}
